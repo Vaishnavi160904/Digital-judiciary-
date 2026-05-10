@@ -1,0 +1,127 @@
+/* CaseSubmission.css - Legacy support (now using dashboard.css) */
+
+/* Import main dashboard styles */
+@import './dashboard.css';
+
+/* Additional legacy styles if needed */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background, #f8fafc);
+    padding: 2rem;
+}
+
+.case-container {
+    background: var(--surface, white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.case-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary, #1e293b);
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.case-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary, #1e293b);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 2px solid var(--border-color, #e2e8f0);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color, #2563eb);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.case-form button {
+    background: var(--primary-color, #2563eb);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.case-form button:hover:not(:disabled) {
+    background: var(--primary-dark, #1e40af);
+    transform: translateY(-2px);
+}
+
+.case-form button:disabled {
+    background: var(--secondary-color, #64748b);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.response-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border-color, #e2e8f0);
+}
+
+.response-box {
+    background: var(--background, #f8fafc);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary-color, #2563eb);
+}
+
+.response-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary, #1e293b);
+}
+
+.response-box p {
+    font-size: 0.875rem;
+    color: var(--text-secondary, #64748b);
+    line-height: 1.6;
+}
